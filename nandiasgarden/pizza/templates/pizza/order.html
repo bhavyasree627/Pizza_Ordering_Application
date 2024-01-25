@@ -1,0 +1,7 @@
+<h1>Order a Pizza</h1>
+<h2>{{ note }}</h2>
+<form enctype="multipart/form-data" action="{%url 'order' %}" method="post">
+    {% csrf_token %}
+    {{ pizzaform }}
+    <button type="submit">Order Pizza</button>
+</form>
